@@ -1,6 +1,7 @@
 package cn.yueying.teashop;
 
 import cn.yueying.teashop.fragment.Fragment1;
+import cn.yueying.teashop.fragment.NewProductFragment;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTabHost;
 
@@ -23,8 +24,7 @@ public class MainActivity extends BaseFragmentActivity {
 		mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
 
 		Bundle b = new Bundle();
-		b.putString("key", "new");
-		mTabHost.addTab(mTabHost.newTabSpec("simple").setIndicator("新品上市"), Fragment1.class, b);
+		mTabHost.addTab(mTabHost.newTabSpec("simple").setIndicator("新品上市"), NewProductFragment.class, b);
 		b = new Bundle();
 		b.putString("key", "sell");
 		mTabHost.addTab(mTabHost.newTabSpec("contacts").setIndicator("最新优惠"), Fragment1.class, b);

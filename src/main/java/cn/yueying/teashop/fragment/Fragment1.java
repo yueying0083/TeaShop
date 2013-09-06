@@ -20,8 +20,7 @@ public class Fragment1 extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View v = LayoutInflater.from(getActivity()).inflate(R.layout.layout,
-				null);
+		View v = LayoutInflater.from(getActivity()).inflate(R.layout.layout, null);
 		text = (TextView) v.findViewById(R.id.text);
 		if (getArguments() != null) {
 			try {
